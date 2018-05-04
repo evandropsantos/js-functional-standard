@@ -9,3 +9,22 @@ const promise2 = new Promise( (resolve, reject) =>
 Promise.race( [promise1, promise2] )
 .then(console.log)
 .catch(console.log);
+
+// Recursao
+const showCountDownS = counter => {
+    while(counter >= 0) {
+        console.log('Sem recursao ', counter--);
+    }
+};
+
+showCountDownS(3);
+
+const showCountDown = counter => {
+    if (counter < 0) return;
+
+    console.log('Com recursao ', counter);
+
+    showCountDown(--counter);
+};
+
+showCountDown(3);

@@ -6,7 +6,7 @@ import { takeUntil, debounceTime, partialize, pipe } from './utils/operators.js'
 // import { filteredNumbers, newNumbers, sum } from './tests/cap02.js';
 // import { ehDivisivel, ehDivisivelPorDois } from './tests/cap03.js';
 // import './tests/cap04.js';
-// import './tests/cap05.js';
+import './tests/cap05.js';
 
 const operations = pipe(
     partialize(takeUntil, 3),
